@@ -1,5 +1,3 @@
-import TaskFlowPage from "./pages/Taskflow"
-import TaskFlowLandingPage from "./pages/Taskflow-landing"
 import React, { useState } from "react";
 import { posts } from "./data";
 import Header from "./components/Header";
@@ -14,10 +12,18 @@ function App() {
   const [page, setPage] = useState(1);
 
   const filtered = posts.filter((post) => {
-    const matchCategory = category === "All" || post.category === category;
-    const matchSearch = post.title.toLowerCase().includes(search.toLowerCase());
-    return matchCategory && matchSearch;
-  });
+  const matchSearch = post.title.toLowerCase().includes(search.toLowerCase());
+
+  // If user is searching, ignore category filter
+  if (search.trim() !== "") {
+    return matchSearch;
+  }
+
+  // If no search, apply category filter
+  const matchCategory = category === "All" || post.category === category;
+  return matchCategory;
+});
+
 
   const paginated = filtered.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
 

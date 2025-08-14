@@ -3,28 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Collapsible Sidebar</title>
+  <title>Navbar with Sidebar</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
-    <aside class="sidebar" id="sidebar">
-      <div class="logo">LOGO</div>
-      <nav class="nav">
-        <a href="#"><i class="fas fa-home"></i> <span>Home</span></a>
-        <a href="#"><i class="fas fa-user"></i> <span>Profile</span></a>
-        <a href="#"><i class="fas fa-cog"></i> <span>Settings</span></a>
-        <a href="#"><i class="fas fa-envelope"></i> <span>Messages</span></a>
-        <a href="#"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
-      </nav>
-      <button id="toggleBtn" class="toggle-btn"><i class="fas fa-bars"></i></button>
-    </aside>
-    <div class="main-content">
-      <h1>Welcome</h1>
-      <p>This is your main content area.</p>
-    </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <h1 class="logo">My Website</h1>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </nav>
+
+  <!-- Main Section -->
+  <section class="content" id="mainContent">
+    <h2>Welcome to My Website</h2>
+    <p>This is some text content in the main section. Click the menu button to open the sidebar.</p>
+  </section>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <a href="#">Profile</a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
   </div>
+
+  <!-- Decorative Shapes -->
+  <div class="shape shape-top-left"></div>
+  <div class="shape shape-top-right"></div>
+  <div class="shape shape-bottom-left"></div>
+  <div class="shape shape-bottom-right"></div>
 
   <script src="script.js"></script>
 </body>
