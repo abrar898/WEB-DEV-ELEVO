@@ -1,0 +1,53 @@
+body{
+    background-color:#16213e;
+}
+.card{
+    color:black;
+    background-color:#16213e;
+}
+.contact-section {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  background-color:#16213e;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.contact-section h2 {
+  text-align: center;
+  color:white;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding:10px 8px 10px 0px;
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  width: 100%;
+  padding:10px 8px 10px 0px;
+  background-color: #1a1a2e;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #16213e;
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    margin: 20px;
+  }
+}
