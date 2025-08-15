@@ -22,8 +22,8 @@ function App() {
   const [error, setError] = useState("");
   const [forecast, setForecast] = useState(null);
 
-  const API_KEY = "087df0ae2fc3df439300ae166460214e";
-  const API_URL = "https://api.openweathermap.org/data/2.5/weather";
+  const API_KEY = "";
+  const API_URL = "got weather api platorm you can create your api key and use it ";
 
   const fetchWeather = async (city) => {
     setLoading(true);
